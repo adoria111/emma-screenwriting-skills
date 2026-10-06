@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 结构拆解（Beta精编专业版）"
+  short_description: "Beta均衡版：依据完整素材判断结构拆解的关键问题，按范围交付可用结果"
+  default_prompt: "使用 $em-structure 处理我提供的材料，按本次范围和要求完成任务。"

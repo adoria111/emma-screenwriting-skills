@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 故事改编（Beta公开专业版）"
+  short_description: "从对标机制形成新故事，在允许的维度内改编并检查人物、因果与钩子的连带影响"
+  default_prompt: "使用 $em-adaptation 分析我给定的对标机制，按本次允许的变化设计新方案并核对连带影响。"
