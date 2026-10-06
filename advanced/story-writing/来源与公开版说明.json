@@ -1,0 +1,122 @@
+{
+  "version": "1.0.0",
+  "date": "2026-10-06",
+  "edition": "public-adapted",
+  "modules": [
+    {
+      "slug": "em-story-architect",
+      "title": "故事架构师",
+      "legacy": "02-story-architect",
+      "sections": 6,
+      "files": [
+        "card-design.md",
+        "emotional-escalation.md",
+        "rhythm-design.md",
+        "conflict-design.md",
+        "opening-hooks.md",
+        "character-dev.md"
+      ]
+    },
+    {
+      "slug": "em-chief-writer",
+      "title": "主编剧",
+      "legacy": "03-chief-writer",
+      "sections": 14,
+      "files": [
+        "card-design.md",
+        "dialogue-engine.md",
+        "emotional-escalation.md",
+        "episode-writing.md",
+        "script-format.md",
+        "opening-hooks.md",
+        "ai-live-action-writing.md",
+        "ai-awareness.md",
+        "visual-writing.md",
+        "visual-style.md",
+        "reveal-and-agency.md",
+        "one-pass-protocol.md",
+        "conflict-design.md",
+        "rhythm-design.md"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "file": "Skills/02-story-architect.md",
+      "sha256": "9a04dfb8e914d74029ec90d369deaefaddd282aafb8e00e8d4f6445420779a5b"
+    },
+    {
+      "file": "Skills/03-chief-writer.md",
+      "sha256": "fd723bcb45c3efeda86642415221938e019b473ef5877105ebcb25d4d576ffd1"
+    },
+    {
+      "file": "references/ai-awareness.md",
+      "sha256": "88d954c64197db0f2256bcad8a608b2993feb74a148a7721136a9e9c9817e1c8"
+    },
+    {
+      "file": "references/ai-live-action-writing.md",
+      "sha256": "32fc378e8df0d684a2a2c2d426485a5ffc669c6530854c96deaaf2ea5387ea8f"
+    },
+    {
+      "file": "references/card-design.md",
+      "sha256": "d00995dd356444ecfebd7f26ee338f410ef4cc2f4b36b1e4f8cfd8cb60c7f4f4"
+    },
+    {
+      "file": "references/character-dev.md",
+      "sha256": "db16b27564ad9e1935bbcf90392a821d31a0c5adf2af51f8ab3f3e649d5075bc"
+    },
+    {
+      "file": "references/conflict-design.md",
+      "sha256": "c9ae4fec3479d97522475ae9423644785bda7fe3b7ed980602d36dd08b3e6fa7"
+    },
+    {
+      "file": "references/dialogue-engine.md",
+      "sha256": "9679c79873aee630ea164587be26a3f8c402876ef4ac06078662b4fcdd997399"
+    },
+    {
+      "file": "references/emotional-escalation.md",
+      "sha256": "97eed9601b3840f2d58c2fa536c9e288b15f196eafe74790e900b0df152c5d13"
+    },
+    {
+      "file": "references/episode-writing.md",
+      "sha256": "5fe68dcd56d44ac013c9fa9e13ffa0ee619ef9260ec54e0f43dea0a2190f03c4"
+    },
+    {
+      "file": "references/one-pass-protocol.md",
+      "sha256": "a5c9444712946caf53ac631ffd5f5a222879f0510896c53fc76e7546a3d05ada"
+    },
+    {
+      "file": "references/opening-hooks.md",
+      "sha256": "9b19e1d9f0b70cf63e22264050abd9c2b40a716916bf5f2eac4b93091fdc2db9"
+    },
+    {
+      "file": "references/reveal-and-agency.md",
+      "sha256": "5809f9c191d9f53cb1ff458f27bf97176f32f2f2c69004b4ea6247e6999a0062"
+    },
+    {
+      "file": "references/rhythm-design.md",
+      "sha256": "4a6e0010e30d239cfb769c5f866287c0a3fbd0df6fb5d4506a066aad46f59269"
+    },
+    {
+      "file": "references/script-format.md",
+      "sha256": "096b32943fda929874732964a6db8ba74fbc3027b03a6d84bb739e87cd736478"
+    },
+    {
+      "file": "references/visual-style.md",
+      "sha256": "c8457f4a6ee6c36aff6cc11aff5247a17f9285211b426f1069349cf54fe60207"
+    },
+    {
+      "file": "references/visual-writing.md",
+      "sha256": "db47378fb12b6ab0054132c91ed0f546527d301527249abf8f4eeb1c034ae9d7"
+    }
+  ],
+  "changes": [
+    "将旧角色封装成两个自包含Skill，合并必要参考正文",
+    "按用户现行授权习惯调整固定一卡、批次和人工断点",
+    "移除历史市场价格、付款建议及未核实的厂商能力参数",
+    "替换长篇项目格式示例，泛化案例名称，去除私人依赖",
+    "补齐角色开发源文件末尾未完成段落，并在正文说明",
+    "统一逐场人物行、同人连续发言与必要情绪括注",
+    "保留类型方法，数字和强度规则改作按题材使用的参考"
+  ]
+}
