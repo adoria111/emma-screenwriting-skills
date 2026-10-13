@@ -1,0 +1,6 @@
+interface:
+  display_name: "艾玛短剧 · 选题迭代"
+  short_description: "分析客户Brief、对标或核心梗，产出人物关系、创新方向与持续剧情引擎"
+  default_prompt: "使用 $em-iteration 根据我提供的Brief或核心梗迭代选题，区分明确要求与假设，按我的范围和数量输出候选方案。"
+policy:
+  allow_implicit_invocation: true
