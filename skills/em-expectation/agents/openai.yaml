@@ -1,4 +1,4 @@
 interface:
   display_name: "艾玛短剧 · 期待设计（Beta精编专业版）"
-  short_description: "Beta均衡版：依据完整素材判断期待设计的关键问题，按范围交付可用结果"
-  default_prompt: "使用 $em-expectation 处理我提供的材料，按本次范围和要求完成任务。"
+  short_description: "贯通全剧目标、阶段任务和期待兑现，依据正文诊断并在授权范围内修复"
+  default_prompt: "使用 $em-expectation 检查这份材料的核心期待、阶段任务与兑现链，按我的范围诊断、设计或修改。"

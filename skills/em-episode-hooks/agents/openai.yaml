@@ -1,0 +1,6 @@
+interface:
+  display_name: "艾玛短剧 · 逐集钩子"
+  short_description: "从观众期待诊断或设计具体集尾，检查戏剧机制、因果依据和下集兑现"
+  default_prompt: "用 $em-episode-hooks 处理这段剧本的集尾钩子，说明观众在等什么，并按本次授权诊断、设计或完成修订及下集承接。"
+policy:
+  allow_implicit_invocation: true
