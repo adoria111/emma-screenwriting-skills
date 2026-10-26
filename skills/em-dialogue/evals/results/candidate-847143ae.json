@@ -1,0 +1,79 @@
+{
+  "baseline": {
+    "id": "candidate-85a56ab4",
+    "result_file": "candidate-85a56ab4.json",
+    "observed_failure": "旧判据容易把叙事信息较少、直白喊满但承担短剧情绪结算的台词称为空洞夸张。"
+  },
+  "candidate": {
+    "id": "candidate-847143ae",
+    "files": {
+      "SKILL.md": "847143aec507eb80e5f53eb1f8d984d20957b1fefd86f07dbdbaf3619c6c125b",
+      "references/dialogue-framework.md": "fb3aa52bcfba0325909258f3fe1a395abdd11c62dfae8f1eaceec6c3f0cff51f",
+      "agents/openai.yaml": "7dd1d79544d4b03f5d585b4881c9d61aec3eb567988f9a19ee86c7a38f35dd5b",
+      "evals/evals.json": "8c9ad11321a48bfdee294a046a69068b2af146193f8a326e6c029cb70d5ad7f3"
+    },
+    "change_hypothesis": {
+      "cause": "旧版缺少情绪效率和表演效率的独立判定，也没有类型化短剧的明情绪边界。",
+      "modification": "加入叙事、情绪、表演三轨效率；区分有效爆发、纯宣泄与无效空喊；新增爆发加关系或行动落地机制。",
+      "expected_improvement": "保留有蓄压和峰值作用的直白夸张台词，同时继续删除无铺垫、无新阶段、无反应和无后果的同义空喊。",
+      "possible_regression": "可能过度宽容所有大喊或传播型金句，削弱车轱辘话删除力度。"
+    }
+  },
+  "environment": "Codex 当前会话；候选 Skill 与 reference 已完整读取；人工行为冒烟与回归，非盲测",
+  "results": [
+    {
+      "case_id": "genre-boundary-01",
+      "status": "pass",
+      "actual_output": "A 不是空洞夸张。长期蓄压、第一次当众爆发和随后断绝关系，使这句话同时完成情绪结算、观众代偿、公开站队和演员峰值；应保留其直白力度，不必强制改成潜台词。优化重点是让对方作出反应，并用关系宣判或离开、拒绝牺牲等动作落地。B 属于无效空喊：相同指责已经喊满，当前没有新情绪阶段、对手反应或后果。应删除或合并，把最强一句移到真正的峰值，再接具体决定。",
+      "checks": {
+        "respected_heightened_genre": true,
+        "recognized_emotional_performance_value": true,
+        "rejected_repetitive_empty_shouting": true,
+        "recommended_consequence_not_forced_subtlety": true
+      }
+    },
+    {
+      "case_id": "normal-01",
+      "status": "pass",
+      "actual_output": "母亲三次要求出钱、女儿两次以没钱拒绝，信息、策略、力度均未变化，也没有形成新的情绪峰值、观众代偿或表演转折。双方仍可原样回应，属于车轱辘话。按要求只诊断，不提供改写稿。",
+      "checks": {
+        "retained_repetition_detection": true,
+        "did_not_use_emotional_track_as_excuse": true,
+        "did_not_rewrite": true
+      }
+    },
+    {
+      "case_id": "boundary-01",
+      "status": "pass",
+      "actual_output": "三次‘不是我’分别承担本能否认、证据压力下的恐惧和向母亲索取信任，叙事信息接近，但表演状态与关系对象持续变化。应保留否认阶梯，只微调停顿和动作，不能压成一次。",
+      "checks": {
+        "protected_performative_repetition": true,
+        "identified_emotional_progression": true,
+        "avoided_mechanical_deletion": true
+      }
+    },
+    {
+      "case_id": "concept-01",
+      "status": "pass",
+      "actual_output": "审稿时分三轨：叙事轨看信息、策略、筹码和后果；情绪轨看蓄压、释放、宣判、站队与观众代偿；表演轨看爆发、停顿、反转和卡点。字面重复或直白夸张都不自动判坏；六轴均无变化，且删除后不损失唯一情绪兑现或表演峰值，才是强删除信号。",
+      "checks": {
+        "explained_three_track_efficiency": true,
+        "did_not_equate_directness_with_bad_dialogue": true,
+        "provided_operational_standard": true
+      }
+    }
+  ],
+  "regression": {
+    "status": "pass_non_blind",
+    "evidence": [
+      "旧版 normal-01 的车轱辘话识别仍通过",
+      "旧版 boundary-01 的必要复沓保护仍通过",
+      "新增 genre-boundary-01 同时通过正向夸张与负向空喊判定"
+    ]
+  },
+  "highest_validation_level": 2,
+  "unverified": [
+    "行为测试由已读取预期答案的当前执行者完成，尚不构成独立留出盲测",
+    "尚未发布 GitHub，也未执行远端 npx 安装一致性验证"
+  ]
+}

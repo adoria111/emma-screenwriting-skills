@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 英文对白打磨"
+  short_description: "打磨已有本地化英文对白的意图准确、自然口语、角色声音与跨集一致性；保留中文和动作，不以固定高分或零改动循环作为完成门。"
+  default_prompt: "使用 $drama-localization-loop 打磨这份已有英文对白，保持中文、动作和剧情不变，完成指定范围与一致性检查。"

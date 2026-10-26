@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 海外题材与过稿参考"
+  short_description: "基于既有指南和案例提供海外题材、分集、审稿与投稿包装参考"
+  default_prompt: "请用 $em-overseas-reference 参考这套资料处理我的选题或过稿需求。"

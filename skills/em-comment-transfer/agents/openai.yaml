@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 批注迁移"
+  short_description: "把中文批注翻译并迁入 Word 原生批注结构，保留正文和已有线程"
+  default_prompt: "使用 $em-comment-transfer 把中文稿批注迁入对应英文 Word，保留正文与既有批注，并核对原生批注结构和数量。"

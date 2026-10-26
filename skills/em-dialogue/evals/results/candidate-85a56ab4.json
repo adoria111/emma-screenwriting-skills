@@ -1,0 +1,53 @@
+{
+  "baseline": null,
+  "candidate": {
+    "id": "candidate-85a56ab4",
+    "files": {
+      "SKILL.md": "85a56ab4417affaeb8121fba3220e64a3f988212f36ad3fb39df7ee845d86bb0",
+      "references/dialogue-framework.md": "95cfa3d70deb81df03ed2f6bca43373d7dd9f3718f4a71c1a4baeaa9e5173b34",
+      "agents/openai.yaml": "277a0c769b8e83b7a82c56915f3c150c5320f9213cf60ed08ec6b0c9aaa70019"
+    }
+  },
+  "environment": "Codex 当前会话；候选 Skill 与 reference 已完整读取；人工行为冒烟，非盲测",
+  "results": [
+    {
+      "case_id": "normal-01",
+      "status": "pass",
+      "actual_output": "场景契约：母亲要求女儿出钱，女儿以没钱拒绝，双方没有引入新筹码，冲突停在原地。重复链：‘必须出／怎么能不出／必须拿出来’同属同力度要求；‘没钱／真的没钱’同属同力度拒绝。信息、策略和后果均未变化，属于车轱辘话。按用户要求只诊断，不提供改写稿。",
+      "checks": {
+        "identified_repetition_chain": true,
+        "explained_state_stagnation": true,
+        "did_not_rewrite": true
+      }
+    },
+    {
+      "case_id": "boundary-01",
+      "status": "pass",
+      "actual_output": "三次‘不是我’字面重复，但不是同功能原地循环：第一次是即时否认；带血书包出现后，第二次变成证据压力下的恐惧；母亲触碰被躲开后，最后一句转为向母亲索取信任。应保留三段否认阶梯，只微调停顿和动作节奏，不能压成一次。",
+      "checks": {
+        "protected_performative_repetition": true,
+        "identified_relationship_change": true,
+        "avoided_mechanical_deletion": true
+      }
+    },
+    {
+      "case_id": "nearby-01",
+      "status": "pass",
+      "actual_output": "该请求是整剧结构重构与分集卡点设计，不是对白诊断或精修，超出 em-dialogue 的处理范围。应交给短剧结构分析或改编类 Skill；若另有具体对白片段，本 Skill 可以单独审查。",
+      "checks": {
+        "recognized_scope_boundary": true,
+        "did_not_claim_structure_work": true,
+        "routed_to_neighbor_capability": true
+      }
+    }
+  ],
+  "regression": {
+    "status": "not_applicable",
+    "reason": "新建 Skill，没有旧版本；边界与近邻反例已作为初始防回归样本。"
+  },
+  "highest_validation_level": 2,
+  "unverified": [
+    "尚未由未读取 expected_behavior 的独立执行者完成留出盲测",
+    "尚未发布 GitHub，也未执行远端 npx 安装一致性验证"
+  ]
+}

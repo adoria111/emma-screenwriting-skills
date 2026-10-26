@@ -1,0 +1,6 @@
+interface:
+  display_name: "艾玛短剧 · 台词效率"
+  short_description: "逐句评分功能性与情绪性，删除废话、重写弱对白并持续收录修改反馈"
+  default_prompt: "用 $em-dialogue-efficiency 检查指定剧本的全部台词，按功能性与情绪性评分，低于5分删除、5至不足7分重写，交付评分表与完整修改稿，并更新本次反馈。"
+policy:
+  allow_implicit_invocation: true

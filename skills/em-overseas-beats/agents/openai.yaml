@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 海外分集"
+  short_description: "按因果组织海外短剧分集、爽点与钩子，检查前后承接和阶段兑现"
+  default_prompt: "请用 $em-overseas-beats 完成指定范围的集纲与钩子兑现表。"

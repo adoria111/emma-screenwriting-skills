@@ -1,12 +1,14 @@
-# 艾玛短剧 · 编剧 Skills（Beta 八技能公开版）
+# 艾玛短剧 · 编剧 Skills（公开版）
 
-八个独立的短剧创作方法，覆盖读对标、做改编、迭代选题、设计期待、修复集尾、扩写集纲、诊断对白与删减冗余。可以按自己的问题选用，不要求每次跑完八个。
+二十二个独立的短剧创作方法，覆盖两个方向：读对标、做改编、迭代选题、设计期待、修复集尾、扩写集纲、诊断对白与删减冗余等**创作方法**；以及去 AI 味、剧本精修、中文对白打磨、英文对白打磨、中→美本地化、批注迁移与海外过稿等**润色与本地化工具**。可以按自己的问题选用，不要求每次跑完全部。
 
 ## 进阶补充：两份写作规则库
 
 已新增[故事架构师与主编剧公开包](advanced/story-writing/README.md)：对应历史 `02-story-architect` 与 `03-chief-writer`，含两个可独立安装的Skill、6章故事架构规则和14章主编剧规则。下载与安装口令见该目录说明。原有六项技能继续保留，现另增逐集钩子与选题迭代模块。
 
 ## 包含什么
+
+### 组一：短剧创作方法
 
 | 标识 | 用在什么时候 | 主要产物 |
 | --- | --- | --- |
@@ -16,20 +18,39 @@
 | `em-expectation` | 要贯通全剧目标、阶段任务与兑现链 | 观众盼头、阶段推进、承诺与兑现诊断 |
 | `em-episode-hooks` | 要诊断或修复具体集尾，或迁移对标钩子 | 核心期待、戏剧机制、可拍断点与下集回应 |
 | `em-outline-to-script` | 已经确定事件与集尾，需要完整场次 | 忠实集纲的正文 |
-| `em-dialogue` | 一场戏能成立，但台词重复或不够可演 | 逐项判断与修改稿 |
+| `em-dialogue` | 一场戏能成立，但台词重复或不够可演 | 逐项判断与修改稿（含0930实操课方法与评估集） |
 | `em-script-trim` | 需要减少冗余，保护信息与情绪 | 删除依据、接法与精简稿 |
 
-每个目录内的 `SKILL.md` 是方法入口，`agents/openai.yaml` 是界面配置。逐集钩子另附同目录下的 `references/hook-methods.md`，用于按需查阅机制、评分和校准示例；选题迭代另附 `references/client-iteration-cases.md`，保存用户随安装包提供的五个Brief样本及分析，样本中的要求不代表通用市场规律。安装时保留整个技能目录。八项技能均不依赖私人素材库，普通聊天使用带参考文件的技能时，可按需一并复制对应参考。
+### 组二：润色与本地化
+
+| 标识 | 用在什么时候 | 主要产物 |
+| --- | --- | --- |
+| `drama-humanizer` | 终稿读起来有 AI 味、书面腔，需锁住剧情只改措辞 | 新文件＋变更日志 |
+| `drama-script-refiner` | 有初稿或客户反馈，要精修节奏、对白与人物表现 | 授权范围内的删改与调整 |
+| `em-dialogue-efficiency` | 台词没用、信息重复、情绪太平、对白拖沓 | 逐句评分与完整改稿 |
+| `em-english-polish` | 已有本地化英文对白，要打磨语义、自然度与人物声音 | 二次打磨后的英文对白 |
+| `drama-localization-loop` | 打磨本地化英文对白的意图、口语与跨集一致性 | 打磨后的英文对白 |
+| `drama-dialogue-localizer` | 只把中文短剧对白落成北美英语、动作线不动 | 中文原文＋英文对白 |
+| `em-us-localization` | 首次把中文稿落成美国文化语境与英文成品 | 名字/符号/台词本地化成品 |
+| `em-comment-transfer` | 中文编辑批注要翻译并迁入对应英文 Word | 带批注的英文 Word |
+| `em-overseas-genre` | 为海外竖屏短剧筛选题材、组合情绪卖点 | 有取舍依据的选题卡 |
+| `em-overseas-engine` | 把海外选题发展为故事开发稿 | 人物、规则、信息差与冲突设计 |
+| `em-overseas-beats` | 拆海外故事框架为逐集目标与钩子兑现 | 分集节奏与付费断点诊断 |
+| `em-overseas-reference` | 需要过稿指南、题材案例与分集参考 | 按需直达对应模块的参考 |
+| `em-overseas-review` | 按过稿指南检查卖点、主动性与节奏 | 可定位的问题清单 |
+| `em-overseas-pitch` | 把海外项目整理成可审阅投稿包 | 卖点、梗概、人设、分集与样稿 |
+
+每个目录内的 `SKILL.md` 是方法入口，`agents/openai.yaml` 是界面配置。带 `references/` 的技能另附方法、校准与案例参考，安装时保留整个技能目录。所有技能均不依赖私人素材库；海外过稿参考为已整理的方法归纳，不构成实时市场数据或平台标准。普通聊天使用带参考文件的技能时，可按需一并复制对应参考。
 
 ## 安装口令
 
 把下面这段发给有 GitHub 访问和文件操作能力的 AI 编程助手：
 
-> 帮我安装「艾玛短剧 Beta 八技能」：从 GitHub 克隆 adoria111/emma-screenwriting-skills 仓库，将 skills/ 下的 8 个技能目录安装到当前工具支持的项目级 Skills 目录；已有同名技能先备份，不要直接覆盖。装好后用中文列出八个技能的用途和触发方式，并带我用其中一个完成一次小练习。
+> 帮我安装「艾玛短剧 编剧 Skills 公开版」：从 GitHub 克隆 adoria111/emma-screenwriting-skills 仓库，将 skills/ 下的 22 个技能目录安装到当前工具支持的项目级 Skills 目录；已有同名技能先备份，不要直接覆盖。装好后用中文列出这些技能的用途和触发方式，并带我用其中一个完成一次小练习。
 
 仓库：<https://github.com/adoria111/emma-screenwriting-skills>
 
-仓库的 `skills/` 目录就是安装来源，内含下面8个独立目录：
+仓库的 `skills/` 目录就是安装来源，内含下面22个独立目录：
 
 ```text
 em-structure
@@ -40,6 +61,20 @@ em-episode-hooks
 em-outline-to-script
 em-dialogue
 em-script-trim
+drama-humanizer
+drama-script-refiner
+em-dialogue-efficiency
+em-english-polish
+drama-localization-loop
+drama-dialogue-localizer
+em-us-localization
+em-comment-transfer
+em-overseas-genre
+em-overseas-engine
+em-overseas-beats
+em-overseas-reference
+em-overseas-review
+em-overseas-pitch
 ```
 
 不同工具识别的项目级目录可能不同，让当前工具按自己的规则安装。不要仅把文件放进一个任意名为 `skills` 的目录，就声称已成功加载。
@@ -76,11 +111,15 @@ em-script-trim
 
 故事改编于2026-10-06作为独立公开版加入：依据用户已安装的 `em-adaptation` 方法提炼，保留功能迁移、改动范围与连带影响检查，移除对私人参考材料的依赖。它不是原包中已有同名Beta文件的原样副本。
 
-Beta在此表示方法版本与内容取向，不代表经过统一模型基准测试。期待设计与逐集钩子的更新检查了技能结构、引用与材料边界，并以虚构片段验证局部诊断、受限修复和反向兑现；不声称已完成八项技能的跨模型实测或观众效果验证。
+### 2026-10-26 更新：新增润色与本地化技能
+
+新增 14 项润色与本地化技能（`drama-humanizer`、`drama-script-refiner`、`em-dialogue-efficiency`、`em-english-polish`、`drama-localization-loop`、`drama-dialogue-localizer`、`em-us-localization`、`em-comment-transfer`、`em-overseas-*` 六项），并将中文对白诊断更新为本地完整版（新增 `references/course-0930.md` 方法整理与 `evals/` 评估集）。公开版已移除本地文件绝对路径；`em-dialogue-efficiency` 的校准参考仅保留方法、不包含私人项目反馈记录。海外过稿参考中的指南、题材与案例均为用户收集资料的编辑性归纳，未独立核验其市场结论；案例文件中的对标剧名仅作方法示例，不附带完整第三方剧本原文。
+
+Beta在此表示方法版本与内容取向，不代表经过统一模型基准测试。期待设计与逐集钩子的更新检查了技能结构、引用与材料边界，并以虚构片段验证局部诊断、受限修复和反向兑现；不声称已完成全部技能的跨模型实测或观众效果验证。
 
 ## 开放许可
 
-本包八项技能正文、界面配置与本说明按 MIT License 提供，见 `LICENSE`。可使用、修改和再分发，须保留版权与许可声明。
+本包技能正文、界面配置与本说明按 MIT License 提供，见 `LICENSE`。可使用、修改和再分发，须保留版权与许可声明。
 
 许可仅适用于本目录所含文件，不改变原有完整Beta包或其他技能的许可，不包含课程HTML、教案、第三方剧本、案例节选、图片和私人项目资料。课程与本包分别交付，ZIP中不附带原剧本。
 

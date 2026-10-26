@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 美国本地化"
+  short_description: "把中文短剧首次落成美国语境及英文或中英成品，保留故事机制"
+  default_prompt: "使用 $em-us-localization 把这份中文短剧首次本地化为美国版，并保持未获准改变的剧情机制。"

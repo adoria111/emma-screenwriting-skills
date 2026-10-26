@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dialogue Localizer"
+  short_description: "Localize short-drama dialogue only, preserving action lines."
+  default_prompt: "Localize this Chinese short-drama script dialogue only. Keep Chinese dialogue and insert natural North American English dialogue on the next line."

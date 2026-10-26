@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 英文对白打磨"
+  short_description: "二次打磨已有英文对白的忠实度、口语、人物声音与跨集一致性"
+  default_prompt: "使用 $em-english-polish 打磨这份已有英文对白，保持中文、动作和剧情不变，完成指定范围与一致性检查。"

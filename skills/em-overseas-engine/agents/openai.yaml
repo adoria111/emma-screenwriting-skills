@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 海外故事设计"
+  short_description: "把海外短剧创意变成人物、世界规则、信息差、阶段回报和完整故事"
+  default_prompt: "请用 $em-overseas-engine 将选题发展成海外短剧故事开发稿。"

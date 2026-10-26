@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 海外选题"
+  short_description: "筛选海外短剧题材与情绪卖点，比较受众假设和制作适配后给出选题卡"
+  default_prompt: "请用 $em-overseas-genre 为我的海外短剧选择题材并说明取舍。"

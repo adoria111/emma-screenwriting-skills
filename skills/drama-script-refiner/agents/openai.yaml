@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 剧本精修"
+  short_description: "根据已有初稿或客户反馈精修节奏、对白与人物表现；只在授权范围删改，不自动重构人设、关键事件或卡点。"
+  default_prompt: "使用 $drama-script-refiner 按这些反馈精修剧本，保留未授权改变的剧情、动机和结尾。"
