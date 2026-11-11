@@ -1,4 +1,4 @@
 interface:
-  display_name: "艾玛短剧 · 中文对白诊断"
-  short_description: "检查台词目的、信息负载、人物声音与情绪效率，按授权精修中文对白"
-  default_prompt: "使用 $em-dialogue 按特定性、目的性、必要性检查这段对白，结合信息负载和情绪功能，按我的请求诊断或精修。"
+  display_name: "艾玛短剧 · 台词两步精修"
+  short_description: "先检查场景、人物魅力与欲望，再逐句评分删改，保留有效情绪和表演"
+  default_prompt: "使用 $em-dialogue，按 Step 1 场景与人物判断、Step 2 台词效率与精修，处理这段剧本；保留人物魅力、情绪和事实。"
