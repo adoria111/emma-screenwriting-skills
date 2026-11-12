@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 逻辑链"
+  short_description: "逐场读全剧，以进度条式 HTML 展示各卡回报、条件链与情感变化"
+  default_prompt: "使用 $em-logic-chain 完整阅读剧本，倒推各卡回报的必要条件，串联人物感情与跨卡逻辑，交付简洁易懂的进度条式 HTML，集纲与逐场证据可展开查看。"
