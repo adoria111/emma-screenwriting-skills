@@ -1,0 +1,6 @@
+interface:
+  display_name: "艾玛短剧 · 世界观属性提炼"
+  short_description: "提炼世界规则、人物、道具与视觉，并分开原文事实和分析推断"
+  default_prompt: "使用 $em-worldbuilding 提炼这份素材的世界观属性，兼顾剧情机制与视觉细节，并注明来源和可借鉴之处。"
+policy:
+  allow_implicit_invocation: true

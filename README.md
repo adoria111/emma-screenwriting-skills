@@ -1,6 +1,22 @@
 # 艾玛短剧 · 编剧 Skills（公开版）
 
-一个统一入口，配套24个专业技能（22个常规模块＋2个进阶模块）。专业技能覆盖两个方向：读对标、做改编、迭代选题、设计期待、修复集尾、扩写集纲、诊断对白与删减冗余等**创作方法**；以及去 AI 味、剧本精修、中文对白打磨、英文对白打磨、中→美本地化、批注迁移与海外过稿等**润色与本地化工具**。可以按自己的问题选用，不要求每次跑完全部。
+一个统一入口，配套25个专业技能（23个常规模块＋2个进阶模块）。专业技能覆盖两个方向：读对标、做改编、迭代选题、设计期待、修复集尾、扩写集纲、诊断对白与删减冗余等**创作方法**；以及去 AI 味、剧本精修、中文对白打磨、英文对白打磨、中→美本地化、批注迁移与海外过稿等**润色与本地化工具**。可以按自己的问题选用，不要求每次跑完全部。
+
+## 2026-11-12：补充世界观提取
+
+新增 [em-worldbuilding · 世界观属性提炼](skills/em-worldbuilding/SKILL.md)。从剧本、集纲或片段中提取世界规则、职业、身体、道具、场景与特效；输出“元素／桥段—来源位置—素材事实—分析判断／属性作用—可借鉴的表达”。兼顾剧情机制和纯视觉特色，分析时不改稿。
+
+**已有技能包的学员只需补装一个模块**，不用重新安装全部。把下面这段交给有 GitHub 访问与文件操作能力的 AI 助手：
+
+> 请从 https://github.com/adoria111/emma-screenwriting-skills 安装 skills/em-worldbuilding，保留整个目录及 references、agents 文件。已有同名版本先比较并备份，安装到当前工具支持的 Skills 目录。安装后实际读取 SKILL.md 和 references/cyberpunk.md，确认可用。只补装这个模块，不覆盖其他技能。
+
+只用上传式技能界面时，下载仓库后单独压缩完整的 `skills/em-worldbuilding/` 目录，再按当前工具的技能上传入口安装；仓库总ZIP不是单技能安装包。不能安装时，可读取技能正文和参考文件后连同本次素材交给聊天助手。
+
+装好后这样开始：
+
+> 使用 em-worldbuilding，提取这份剧本的世界观规则、人物职业、特殊道具、场景和视觉特效。用表格区分素材事实与分析判断，标明来源和可借鉴之处，只分析，不改稿。
+
+公开版保留通用方法，赛博参考不包含私人项目或第三方剧本逐集摘录。当前仓库的统一入口已加入世界观路由；已安装旧版入口的学员可直接点名 `em-worldbuilding` 使用，需要自然语言自动路由时，再比较并更新 `skills/emma-duanju-skill/`。仅安装入口不会自动安装专业模块。
 
 ## 2026-11-11：台词两步版
 
@@ -19,7 +35,7 @@ python3 scripts/install-dialogue-skills.py
 
 ## 进阶补充：两份写作规则库
 
-已新增[故事架构师与主编剧公开包](advanced/story-writing/README.md)：对应历史 `02-story-architect` 与 `03-chief-writer`，含两个可独立安装的Skill、6章故事架构规则和14章主编剧规则。下载与安装口令见该目录说明。两个进阶模块位于 `advanced/story-writing/skills/`，与 `skills/` 下的22个专业模块分开安装。
+已新增[故事架构师与主编剧公开包](advanced/story-writing/README.md)：对应历史 `02-story-architect` 与 `03-chief-writer`，含两个可独立安装的Skill、6章故事架构规则和14章主编剧规则。下载与安装口令见该目录说明。两个进阶模块位于 `advanced/story-writing/skills/`，与 `skills/` 下的23个专业模块分开安装。
 
 ## 包含什么
 
@@ -30,6 +46,7 @@ python3 scripts/install-dialogue-skills.py
 | 标识 | 用在什么时候 | 主要产物 |
 | --- | --- | --- |
 | `em-structure` | 有原稿，想知道结构为什么有效或哪里不顺 | 有原文依据的结构判断 |
+| `em-worldbuilding` | 提取世界规则、职业、道具、身体与视觉特色 | 有来源的事实／推断分列表与可借鉴表达 |
 | `em-adaptation` | 要从对标机制设计新故事，或按指定维度改设定 | 新方案、事件链及连带影响检查 |
 | `em-iteration` | 有客户Brief、对标或核心梗，想发展多个创新方向 | 核心梗、人物关系、剧情引擎、桥段与阶段升级 |
 | `em-expectation` | 要贯通全剧目标、阶段任务与兑现链 | 观众盼头、阶段推进、承诺与兑现诊断 |
@@ -63,7 +80,7 @@ python3 scripts/install-dialogue-skills.py
 
 ### 已有24技能：只补装统一入口
 
-下载 [统一入口安装包（2026-11-11，含提问引导模式）](downloads/emma-duanju-skill-20261111.zip?raw=true)。这个包只新增 `emma-duanju-skill`，不包含或替换原24个专业技能。
+下载 [统一入口安装包（2026-11-11，含提问引导模式）](downloads/emma-duanju-skill-20261111.zip?raw=true)。这个历史版本包只新增 `emma-duanju-skill`，不包含或替换原24个专业技能，也不含11月12日新增的世界观路由；最新入口从 `skills/emma-duanju-skill/` 获取，世界观模块需另外补装。
 
 Claude聊天界面安装：
 
@@ -80,7 +97,7 @@ Claude聊天界面安装：
 ### 第一次安装
 
 - **Claude聊天界面**：先下载仓库，按所需模块分别将完整技能目录压成ZIP并上传启用，保留 `references/` 等资源；统一入口可直接使用上面的单独ZIP。仓库总ZIP不是单技能安装包。
-- **Codex / Claude Code等支持文件操作的工具**：使用下方安装口令，由工具核实其支持的技能目录。安装22个常规模块和统一入口时，来源为 `skills/` 下23个目录；需要完整24专业技能时，再安装 `advanced/story-writing/skills/` 下两个进阶模块。
+- **Codex / Claude Code等支持文件操作的工具**：使用下方安装口令，由工具核实其支持的技能目录。安装23个常规模块和统一入口时，来源为 `skills/` 下24个目录；需要完整25专业技能时，再安装 `advanced/story-writing/skills/` 下两个进阶模块。
 - 已有同名技能先比较并备份；个人完整版入口可能覆盖更多能力，不用此公开版静默替换它。
 
 ### 日常怎么说
@@ -109,21 +126,22 @@ Claude聊天界面安装：
 - 按解说剧或其他已约定格式交付，检查因果、人物知情、逐集篇幅和上下集承接。
 - 兼容本公开包的精修旧名：`em-script-refine` 指向实际模块 `drama-script-refiner`；缺少 `drama-truesource` 时直接核对底稿、版本与锁定项。
 
-入口是协调规则，不替代24个专业技能，也不保证模型每次执行正确。未安装的模块不能靠输入名称自动获得；没有文件访问能力时，见下方“只用普通聊天”。
+入口是协调规则，不替代25个专业技能，也不保证模型每次执行正确。未安装的模块不能靠输入名称自动获得；没有文件访问能力时，见下方“只用普通聊天”。
 
 ## 安装口令（支持文件操作的工具）
 
 把下面这段发给有 GitHub 访问和文件操作能力的 AI 编程助手：
 
-> 帮我安装「艾玛短剧 编剧 Skills 公开版」：从 GitHub 克隆 adoria111/emma-screenwriting-skills 仓库，将 skills/ 下的23个目录（统一入口＋22个专业技能）以及 advanced/story-writing/skills/ 下的2个进阶技能安装到当前工具支持的 Skills 目录，保留各模块的 references 等资源；已有同名技能先比较并备份，不要直接覆盖。核对文件和引用，并实际读取入口与一个专业技能完成一次小练习，分别说明文件安装、宿主加载和实际执行是否成功。
+> 帮我安装「艾玛短剧 编剧 Skills 公开版」：从 GitHub 克隆 adoria111/emma-screenwriting-skills 仓库，将 skills/ 下的24个目录（统一入口＋23个专业技能）以及 advanced/story-writing/skills/ 下的2个进阶技能安装到当前工具支持的 Skills 目录，保留各模块的 references 等资源；已有同名技能先比较并备份，不要直接覆盖。核对文件和引用，并实际读取入口与一个专业技能完成一次小练习，分别说明文件安装、宿主加载和实际执行是否成功。
 
 仓库：<https://github.com/adoria111/emma-screenwriting-skills>
 
-仓库的 `skills/` 目录就是安装来源，内含统一入口和下面22个专业技能，共23个目录：
+仓库的 `skills/` 目录就是安装来源，内含统一入口和下面23个专业技能，共24个目录：
 
 ```text
 emma-duanju-skill
 em-structure
+em-worldbuilding
 em-adaptation
 em-iteration
 em-expectation

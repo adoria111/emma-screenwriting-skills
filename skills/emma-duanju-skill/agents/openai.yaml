@@ -1,6 +1,6 @@
 interface:
   display_name: "艾玛短剧 · 统一入口（公开版）"
-  short_description: "适配公开版24技能，按目标读取专业方法，保持底稿与约束并完成交付"
+  short_description: "适配公开版25技能，按目标读取专业方法，保持底稿与约束并完成交付"
   default_prompt: "使用 $emma-duanju-skill 根据我的材料和目标选择已安装的专业技能，完成本轮任务并保留未获准修改的内容。"
 policy:
   allow_implicit_invocation: true
