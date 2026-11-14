@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 故事架构师"
+  short_description: "把想法或获准改编方案整理成核心大纲、人物档案与分集纲；包含卡点、节奏、冲突、情绪升级和人物写作规则。"
+  default_prompt: "请使用 $em-story-architect，依据我的材料和锁定项完成本次写作任务。"

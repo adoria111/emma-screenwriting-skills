@@ -1,0 +1,4 @@
+interface:
+  display_name: "艾玛短剧 · 主编剧"
+  short_description: "把有效集纲扩写成指定集数的分场剧本；包含台词、情绪、连续性、剧本格式及真人、AI仿真人、漫剧适配规则。"
+  default_prompt: "请使用 $em-chief-writer，依据我的材料和锁定项完成本次写作任务。"

@@ -1,5 +1,7 @@
 # 艾玛短剧 · 故事架构师与主编剧（写作规则库公开版）
 
+> 学员最新安装入口已统一到根目录：[故事架构师](../../skills/em-story-architect/) · [主编剧](../../skills/em-chief-writer/)。本目录保留历史兼容路径；同名技能只安装一次。
+
 这两个角色来自历史调用链 `ai-drama-showrunner → 02-story-architect → 03-chief-writer → 对应写作规则库`。现在整理成可独立安装的两个Skill；每个都附带完整的公开版规则正文，不需要旧版总控或私人目录。
 
 | 历史角色 | 公开安装标识 | 交付与规则 |
@@ -22,8 +24,7 @@
 ```text
 请帮我下载并安装「艾玛短剧·故事架构师与主编剧」公开版。
 仓库：https://github.com/adoria111/emma-screenwriting-skills
-固定版本：writing-rules-v1.0.0
-安装来源：advanced/story-writing/skills/ 下的 em-story-architect 和 em-chief-writer 两个目录。
+安装来源：根目录 skills/ 下的 em-story-architect 和 em-chief-writer 两个目录。
 请完整保留每个目录里的 SKILL.md、agents/ 和 references/，按当前工具支持的项目级Skills位置安装；已有同名目录先比较并备份，不直接覆盖，不修改其他技能。
 安装后核对两个SKILL及其写作规则文件都存在、引用可读取，并列出用途、调用方法和实际安装路径。目录已复制与宿主已加载要分别说明；需要刷新或重启时如实告诉我，不要把未验证的加载状态说成成功。
 ```
